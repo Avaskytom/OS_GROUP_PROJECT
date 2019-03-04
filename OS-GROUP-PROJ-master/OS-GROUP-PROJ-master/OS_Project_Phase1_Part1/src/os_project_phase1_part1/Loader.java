@@ -24,9 +24,15 @@ public class Loader {
         try {
             File f = new File("src\\os_project_phase1_part1\\ProgramFile-TextVersion.txt");
             Scanner sc = new Scanner(f);
+            PCB pcb = new PCB();
+            
             while (sc.hasNext()) {
-                System.out.println(sc.nextLine());
+                pcb.extract(sc.nextLine());
+                
+                // System.out.println(sc.nextLine());
             }
+            
+            
         } catch (FileNotFoundException ex) {
             System.out.println("error");
         }
