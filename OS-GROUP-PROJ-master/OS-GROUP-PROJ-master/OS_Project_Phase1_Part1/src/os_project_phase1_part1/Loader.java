@@ -1,14 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package os_project_phase1_part1;
 
-/**
- *
- * @author Olivier
- */
+import java.io.*;
+import java.util.Scanner;
+
 public class Loader {
+    
+    public Loader() {
+        /*
+        try {
+            File f = new File("src\\os_project_phase1_part1\\ProgramFile-TextVersion.txt");
+            Scanner sc = new Scanner(f);
+            while (sc.hasNext()) {
+                System.out.println(sc);
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println("error");
+        }
+        */
+    }
+    
+    public void load() {
+        
+        try {
+            File f = new File("src\\os_project_phase1_part1\\ProgramFile-TextVersion.txt");
+            Scanner sc = new Scanner(f);
+            while (sc.hasNext()) {
+                System.out.println(sc.nextLine());
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println("error");
+        }
+        
+    }
     
 }

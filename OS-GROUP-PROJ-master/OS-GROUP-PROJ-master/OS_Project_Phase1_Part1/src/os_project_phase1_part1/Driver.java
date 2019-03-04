@@ -11,11 +11,18 @@ package os_project_phase1_part1;
  * Short Scheduler
  */
 public class Driver {
-    Loader();
-    while (true) {
-        scheduler();
-        dispatcher();
-        CPU();
-        waitforinterrupt();
+    
+    public Driver() {
+        Loader loader = new Loader();
+        loader.load();
+        /*
+        while (true) {
+            scheduler();
+            dispatcher();
+            CPU();
+            waitforinterrupt();
+        }
+        */
     }
+        
 }
