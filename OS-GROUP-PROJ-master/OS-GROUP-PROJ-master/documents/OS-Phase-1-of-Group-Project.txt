@@ -1,0 +1,145 @@
+﻿OS Project Phase 1
+
+
+Olivier Tran
+Joe Eberly
+Richard Bioh
+Wesley Addo
+
+Project goals
+* Build an OS using a language
+* Has to be able to handle and schedule processes
+* Implement structures
+
+OS Structures
+* UI
+* Program Execution
+* I/O
+* File-system manipulation
+* Communications
+* Error Detection
+
+Language
+* Java
+   * IDE: NetBeans
+   
+Main Components
+1. Memory System
+2. OS Driver
+3. Loader
+4. Scheduler
+5. Dispatcher
+6. Memory
+7. Effective-Address
+8. Fetch
+9. Decode
+10. Execute
+
+Flow
+1.  OS Driver          ->  Loader
+2.  Loader             ->  Program File
+3.  Loader             ->  Disk                ->  (Long) Scheduler  -> Memory
+4.  Loader            <->  OS Driver
+5.  OS Driver          ->  (Long) Scheduler    ->  Memory
+6.  (Long Scheduler)  <->  OS Driver
+7.  OS Driver          ->  (Short) Scheduler)
+8.  (Short) Scheduler  ->  Dispatcher          -> Context Switch
+9.  (Short) Scheduler  ->  OS Driver
+10. OS Driver          --  CPU                 -- Fetch, Decode  ->  Execute ->  Effective Address
+
+
+Parts
+1. CPU
+2. Multiprocessor Architecture
+List of Classes to Create for the Simulator
+* 
+
+Abstract and Introduction
+
+
+
+
+
+
+
+
+Design Approach
+
+
+
+
+
+
+
+
+
+
+Implementation Modules
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Simulation, Code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data and Results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conclusion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bibliography
